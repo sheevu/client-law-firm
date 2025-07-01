@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jurised Law Firm, Lucknow — Trusted advocates for banking, service, consumer, matrimonial, property, RERA, and High Court cases. Get expert legal support today.">
+    <title>Jurised Law Firm | Top Advocates in Lucknow | Legal Experts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #845EC2;
+            --secondary: #D65DB1;
+            --accent1: #FF6F91;
+            --accent2: #FF9671;
+            --accent3: #FFC75F;
+            --light: #F9F871;
+            --dark: #1A1A2E;
+            --text: #333333;
+            --light-bg: #F8F9FA;
+            --section-bg: #F5F7FF;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.8;
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            color: var(--dark);
+            padding: 20px 0;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--primary);
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .logo span {
+            color: var(--secondary);
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 30px;
+        }
+        
+        nav ul li a {
+            color: var(--dark);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        nav ul li a:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            bottom: -5px;
+            left: 0;
+            transition: width 0.3s ease;
+        }
+        
+        nav ul li a:hover {
+            color: var(--primary);
+        }
+        
+        nav ul li a:hover:after {
+            width: 100%;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, rgba(132,94,194,0.9), rgba(214,93,177,0.9)), url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            padding: 150px 0;
+            text-align: center;
+            position: relative;
+        }
+        
+        .hero:before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: linear-gradient(transparent, var(--light-bg));
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 25px;
+            line-height: 1.2;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: var(--light);
+            color: var(--dark);
+            padding: 15px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .cta-button:hover {
+            background: white;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        
+        /* Expertise Section */
+        .expertise {
+            padding: 100px 0;
+            background: var(--light-bg);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+            color: var(--primary);
+            font-size: 2.8rem;
+            position: relative;
+        }
+        
+        .section-title:after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: var(--accent3);
+            margin: 20px auto 0;
+        }
+        
+        .expertise-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .expertise-card {
+            background: white;
+            border-radius: 10px;
+            padding: 35px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.05);
+            transition: all 0.4s ease;
+            border-top: 4px solid var(--primary);
+        }
+        
+        .expertise-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+        }
+        
+        .expertise-card h3 {
+            color: var(--primary);
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+        
+        /* New SEO Section */
+        .seo-section {
+            padding: 100px 0;
+            background: var(--section-bg);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .seo-section:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 40%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            z-index: 0;
+            clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+        }
+        
+        .seo-content {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+        }
+        
+        .seo-text {
+            flex: 1;
+            padding-right: 50px;
+        }
+        
+        .seo-image {
+            flex: 1;
+            position: relative;
+        }
+        
+        .seo-image img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+            transform: perspective(1000px) rotateY(-15deg);
+            transition: all 0.4s ease;
+        }
+        
+        .seo-image:hover img {
+            transform: perspective(1000px) rotateY(-5deg);
+        }
+        
+        .seo-list {
+            margin-top: 30px;
+        }
+        
+        .seo-list li {
+            margin-bottom: 15px;
+            position: relative;
+            padding-left: 30px;
+        }
+        
+        .seo-list li:before {
+            content: '⚖️';
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        
+        /* Team Section */
+        .team {
+            padding: 100px 0;
+        }
+        
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+        
+        .team-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            transition: all 0.4s ease;
+            position: relative;
+        }
+        
+        .team-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+        
+        .team-img {
+            height: 350px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        
+        .team-img:after {
+            content: '⚖️';
+            position: absolute;
+            bottom: -25px;
+            right: 30px;
+            font-size: 60px;
+            color: var(--primary);
+            background: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .team-content {
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .team-content h3 {
+            color: var(--primary);
+            margin-bottom: 10px;
+            font-size: 1.6rem;
+        }
+        
+        .team-content .specialty {
+            color: var(--accent1);
+            font-weight: 600;
+            margin-bottom: 20px;
+            display: block;
+            font-size: 1.1rem;
+        }
+        
+        .team-content p {
+            margin-bottom: 15px;
+        }
+        
+        /* Why Choose Us */
+        .why-us {
+            padding: 100px 0;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            position: relative;
+        }
+        
+        .why-us .section-title {
+            color: white;
+        }
+        
+        .why-us .section-title:after {
+            background: var(--light);
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+        
+        .benefit-card {
+            background: rgba(255,255,255,0.1);
+            padding: 40px 30px;
+            border-radius: 10px;
+            text-align: center;
+            transition: all 0.4s ease;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .benefit-card:hover {
+            background: rgba(255,255,255,0.2);
+            transform: translateY(-10px);
+        }
+        
+        .benefit-card i {
+            font-size: 50px;
+            margin-bottom: 25px;
+            color: var(--light);
+        }
+        
+        .benefit-card h3 {
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+        
+        /* Testimonials Section */
+        .testimonials {
+            padding: 100px 0;
+            background: var(--section-bg);
+        }
+        
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .testimonial-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            position: relative;
+        }
+        
+        .testimonial-card:before {
+            content: '"';
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 60px;
+            color: rgba(132,94,194,0.1);
+            font-family: serif;
+            line-height: 1;
+        }
+        
+        .testimonial-card p {
+            font-style: italic;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+        
+        .testimonial-author img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 15px;
+            object-fit: cover;
+        }
+        
+        .author-info h4 {
+            margin: 0;
+            font-size: 1.1rem;
+        }
+        
+        .author-info p {
+            margin: 5px 0 0;
+            font-style: normal;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            padding: 100px 0;
+            text-align: center;
+            background: linear-gradient(135deg, var(--accent2), var(--accent3));
+            color: var(--dark);
+        }
+        
+        .cta-section h2 {
+            color: var(--dark);
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+        }
+        
+        .cta-section p {
+            max-width: 700px;
+            margin: 0 auto 40px;
+            font-size: 1.2rem;
+        }
+        
+        /* Contact Section */
+        .contact {
+            padding: 100px 0;
+            background: var(--light-bg);
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .contact-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+        }
+        
+        .contact-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+        }
+        
+        .contact-card i {
+            font-size: 40px;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+        
+        .contact-card h3 {
+            margin-bottom: 15px;
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 80px 0 30px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+        
+        .footer-column h3 {
+            color: var(--light);
+            margin-bottom: 25px;
+            font-size: 1.4rem;
+            position: relative;
+            padding-bottom: 15px;
+        }
+        
+        .footer-column h3:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background: var(--primary);
+        }
+        
+        .footer-column p {
+            color: #bbb;
+            margin-bottom: 20px;
+        }
+        
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer-column ul li {
+            margin-bottom: 12px;
+        }
+        
+        .footer-column ul li a {
+            color: #bbb;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        
+        .footer-column ul li a:hover {
+            color: white;
+            transform: translateX(5px);
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255,255,255,0.1);
+            color: white;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            background: var(--primary);
+            transform: translateY(-5px);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: #aaa;
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive */
+        @media (max-width: 992px) {
+            .seo-content {
+                flex-direction: column;
+            }
+            
+            .seo-text {
+                padding-right: 0;
+                margin-bottom: 50px;
+            }
+            
+            .seo-section:before {
+                width: 100%;
+                height: 40%;
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            nav ul {
+                margin-top: 20px;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+            
+            nav ul li {
+                margin: 0 10px 10px;
+            }
+            
+            .section-title {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">Jurised <span>Law Firm</span></div>
+            <nav>
+                <ul>
+                    <li><a href="#expertise">Expertise</a></li>
+                    <li><a href="#team">Our Team</a></li>
+                    <li><a href="#why-us">Why Choose Us</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Premier Legal Representation in Lucknow ⚖️</h1>
+            <p>Strategic legal solutions with a client-first approach. Our expert team of experienced advocates helps you navigate complex legal challenges with confidence and clarity.</p>
+            <a href="#contact" class="cta-button">Get Free Consultation</a>
+        </div>
+    </section>
+    
+    <!-- Expertise Section -->
+    <section id="expertise" class="expertise">
+        <div class="container">
+            <h2 class="section-title">Our Legal Expertise</h2>
+            <div class="expertise-grid">
+                <div class="expertise-card">
+                    <h3>Banking & Insolvency Matters</h3>
+                    <p>Strong representation in banking disputes, insolvency cases, and financial settlements with strategic legal approaches.</p>
+                </div>
+                <div class="expertise-card">
+                    <h3>Service Matters</h3>
+                    <p>Expert advocacy for government and private sector service disputes, ensuring your employment rights are protected.</p>
+                </div>
+                <div class="expertise-card">
+                    <h3>Consumer Disputes</h3>
+                    <p>Protecting consumer rights in Lucknow and ensuring quick resolutions through effective legal channels.</p>
+                </div>
+                <div class="expertise-card">
+                    <h3>Armed Forces Tribunal Cases</h3>
+                    <p>Trusted representation for serving and retired defence personnel with deep understanding of military law.</p>
+                </div>
+                <div class="expertise-card">
+                    <h3>Matrimonial & Family Disputes</h3>
+                    <p>Sensitive handling of divorce, maintenance, child custody cases with focus on amicable resolutions.</p>
+                </div>
+                <div class="expertise-card">
+                    <h3>Corporate & Commercial Disputes</h3>
+                    <p>Sharp legal strategies for business conflicts, shareholder issues, and corporate fraud cases.</p>
+                </div>
+                <div class="expertise-card">
+                    <h3>Property & Real Estate Disputes</h3>
+                    <p>Comprehensive solutions for RERA and Real Estate Appellate Tribunal cases with proven success.</p>
+                </div>
+                <div class="expertise-card">
+                    <h3>High Court Matters</h3>
+                    <p>Expert handling of criminal & civil writ petitions, bail applications, and quashing of FIRs in High Court.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- New SEO Section -->
+    <section class="seo-section">
+        <div class="container">
+            <div class="seo-content">
+                <div class="seo-text">
+                    <h2 class="section-title">Leading Law Firm in Lucknow 🏛️</h2>
+                    <p>Jurised Law Firm has established itself as one of the most trusted legal service providers in Lucknow, with a proven track record of success across various courts and tribunals. Our team combines deep legal expertise with a personalized approach to deliver exceptional results.</p>
+                    
+                    <div class="seo-list">
+                        <h3>Why Clients Choose Our Lucknow Law Firm:</h3>
+                        <ul>
+                            <li><strong>1500+ Cases Handled:</strong> Extensive experience across diverse legal domains</li>
+                            <li><strong>90% Success Rate:</strong> Demonstrated results in complex litigation</li>
+                            <li><strong>High Court Specialists:</strong> Direct experience with Lucknow Bench cases</li>
+                            <li><strong>RERA Experts:</strong> Deep understanding of Uttar Pradesh real estate laws</li>
+                            <li><strong>Multilingual Team:</strong> Fluent in Hindi, English, and local dialects</li>
+                        </ul>
+                    </div>
+                    
+                    <a href="#contact" class="cta-button" style="background: var(--primary); color: white; margin-top: 20px;">Schedule Consultation</a>
+                </div>
+                <div class="seo-image">
+                    <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Jurised Law Firm Team in Lucknow">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <div class="container">
+            <h2 class="section-title">Meet Our Legal Experts ⚖️</h2>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-img" style="background-image: url('https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80');"></div>
+                    <div class="team-content">
+                        <h3>Adv. Jharna Kumar</h3>
+                        <span class="specialty">Matrimonial & Property Disputes</span>
+                        <p>Practicing since 2018, known for strong advocacy in matrimonial and property disputes with a dynamic, result-oriented approach.</p>
+                        <p><strong>Specialties:</strong> Matrimonial disputes, family law, property disputes, RERA cases</p>
+                        <p><strong>Strength:</strong> Strong negotiation skills and mediation expertise</p>
+                        <a href="https://wa.me/917505047760" class="cta-button" style="background: var(--accent1); color: white; margin-top: 15px; display: inline-block;">Contact Now</a>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-img" style="background-image: url('https://static.wixstatic.com/media/a37be1_fb5bdbffb5594e75976e7790a183ebaf~mv2.jpg');"></div>
+                    <div class="team-content">
+                        <h3>Adv. Ambikesh Singh Chauhan</h3>
+                        <span class="specialty">Criminal & Service Matters</span>
+                        <p>Practicing since 2021, specializes in criminal law, service matters, and armed forces cases with modern, strategic mindset.</p>
+                        <p><strong>Specialties:</strong> Criminal defense, service matters, armed forces tribunal cases</p>
+                        <p><strong>Strength:</strong> Detailed legal research and aggressive courtroom advocacy</p>
+                        <a href="https://wa.me/917007499948" class="cta-button" style="background: var(--accent1); color: white; margin-top: 15px; display: inline-block;">Contact Now</a>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-img" style="background-image: url('https://static.wixstatic.com/media/a37be1_64ee8a69d234491db9645d9862523fb4~mv2.jpg');"></div>
+                    <div class="team-content">
+                        <h3>Adv. Pooja Tripathi</h3>
+                        <span class="specialty">Consumer & Corporate Law</span>
+                        <p>Practicing since 2017, expert in consumer disputes and corporate law with problem-solving mindset and business-focused strategies.</p>
+                        <p><strong>Specialties:</strong> Consumer disputes, corporate & commercial litigation, mediation</p>
+                        <p><strong>Strength:</strong> Business-focused legal strategies</p>
+                        <a href="https://wa.me/919005795027" class="cta-button" style="background: var(--accent1); color: white; margin-top: 15px; display: inline-block;">Contact Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Why Choose Us -->
+    <section id="why-us" class="why-us">
+        <div class="container">
+            <h2 class="section-title">Why Choose Jurised Law Firm?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <i class="fas fa-user-tie"></i>
+                    <h3>Trusted Team of Top Advocates</h3>
+                    <p>Our team consists of the most trusted and experienced advocates in Lucknow with proven track records.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-hand-holding-heart"></i>
+                    <h3>Client-focused Approach</h3>
+                    <p>We prioritize your needs with transparent communication and personalized legal strategies.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-trophy"></i>
+                    <h3>Proven Track Record</h3>
+                    <p>Successful representation across various courts & tribunals in Lucknow and Uttar Pradesh.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-balance-scale"></i>
+                    <h3>High Court Expertise</h3>
+                    <p>Strong network and specialized expertise in handling complex High Court matters.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Client Testimonials</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p>Adv. Jharna Kumar handled my divorce case with exceptional sensitivity and professionalism. She negotiated a fair settlement that protected my rights and my children's future. Highly recommended for family law matters in Lucknow.</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Client">
+                        <div class="author-info">
+                            <h4>Priya Sharma</h4>
+                            <p>Family Law Client</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p>The team at Jurised Law Firm saved our business from a potentially devastating contract dispute. Their corporate law expertise and strategic approach were invaluable. Truly the best law firm in Lucknow for business matters.</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Client">
+                        <div class="author-info">
+                            <h4>Rahul Verma</h4>
+                            <p>Business Owner</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p>After being wrongfully terminated from my government position, Adv. Ambikesh fought tirelessly for my reinstatement. His knowledge of service matters and persistence in court led to a full victory. Grateful for his exceptional representation.</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/68.jpg" alt="Client">
+                        <div class="author-info">
+                            <h4>Vikram Singh</h4>
+                            <p>Government Employee</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Facing a Legal Challenge in Lucknow?</h2>
+            <p>Don't navigate the complex legal system alone. Contact Jurised Law Firm today for expert representation from Lucknow's top advocates.</p>
+            <a href="https://wa.me/919005795027" class="cta-button" style="background: var(--dark); color: white;">Chat on WhatsApp Now</a>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Our Office</h3>
+                    <p>123 Legal Avenue, Hazratganj<br>Lucknow, Uttar Pradesh 226001</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-phone-alt"></i>
+                    <h3>Call Us</h3>
+                    <p>+91 9005795027<br>+91 7007499948</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email Us</h3>
+                    <p>info@jurisedlaw.com<br>advocateambikeshsingh@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Jurised Law Firm</h3>
+                    <p>One of Lucknow's leading legal service providers, dedicated to delivering strong, strategic, and result-oriented legal solutions.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://wa.me/919005795027"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Practice Areas</h3>
+                    <ul>
+                        <li><a href="#">Banking & Insolvency</a></li>
+                        <li><a href="#">Matrimonial Disputes</a></li>
+                        <li><a href="#">Property Disputes</a></li>
+                        <li><a href="#">High Court Matters</a></li>
+                        <li><a href="#">Consumer Disputes</a></li>
+                        <li><a href="#">Corporate Law</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#expertise">Our Expertise</a></li>
+                        <li><a href="#team">Our Team</a></li>
+                        <li><a href="#why-us">Why Choose Us</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Office Hours</h3>
+                    <p>Monday - Friday: 9:00 AM - 7:00 PM<br>
+                    Saturday: 10:00 AM - 4:00 PM<br>
+                    Sunday: Closed</p>
+                    <h3 style="margin-top: 20px;">Emergency</h3>
+                    <p>+91 9005795027<br>24/7 Availability</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Jurised Law Firm. All Rights Reserved. | <a href="#" style="color: #aaa;">Privacy Policy</a> | <a href="#" style="color: #aaa;">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
